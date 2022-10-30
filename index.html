@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://file.myfontastic.com/Tn5oFzAZKFd7VSbSGqL9z4/icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Shipping Time Calculator</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+  
+    <h1>The Company</h1>
+
+    <h2>Shipping Time Calculator</h2>
+
+    <div class="input-fields">
+      
+      <form>
+        
+        <div class="input-field">
+          
+          <input type="text"  id="datepicker" placeholder="Order Date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+
+        </div>
+
+        <div class="input-field">
+
+          <input list="items" id="item" placeholder="Fabric Type">
+          <datalist id="items">
+            <option value="Cotton"></option>
+            <option value="Linen"></option>
+          </datalist>
+
+        </div>
+      
+        <div class="input-field">
+          
+          <input type="number" id="productnumber" placeholder="Quantity" min="1" max="100">
+          <i class="icon icon-info" title="Shipping Dates May Vary Based on Quantity"></i> 
+
+        </div>
+		  </form>
+    </div>
+
+    <div>
+
+      <button id="calculate">Calculate</button>
+
+      <p class="message">Please enter your order information to estimate shipping date.</p>
+
+    </div>  
+
+    <div class="colored-areas"></div>  
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

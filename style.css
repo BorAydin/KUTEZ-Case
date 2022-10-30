@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-height: 1080px;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgb(172, 110, 255);
+  background: linear-gradient(
+    60deg,
+    rgba(172, 110, 255, 1) 54%,
+    rgba(172, 110, 255, 1) 67%,
+    rgba(36, 20, 219, 1) 98%
+  );
+}
+
+.container{
+  background: white;
+  width: 1280px;
+  border-radius: 0 270px 270px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-top: 15px;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: bold;
+  color: #2B2E39;
+  margin: 0;
+  font-size: 43pt
+}
+
+h2 {
+  font-family: inherit;
+  font-weight: bolder;
+  color: #2B2E39;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 85pt;
+  width: 80%;
+}
+
+p{
+  font-family: inherit;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-field{
+  position: relative;
+}
+
+.input-field .icon{
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  font-size: 18px;
+  top: 6px;
+  color: #8d9092;
+}
+
+.input-field .icon-info {
+  font-size: 22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input{
+  font-family: inherit;
+  font-weight: 500;
+  color: #8d9092;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid #8d9092;
+  font-size: medium;
+  outline: none;
+  position: relative;
+  padding: 5px 10px;
+  margin-right: 15px;
+  width: 200px;
+}
+
+button {
+  background: rgb(36, 20, 219);
+  background: linear-gradient(
+    60deg,
+    rgba(36, 20, 219, 1) 13%,
+    rgba(172, 110, 255, 1) 70%,
+    rgba(172, 110, 255, 1) 88%
+  );
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid #8d9092;
+  font-size: 17pt;
+  outline: none;
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  margin-right: 15px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.message{
+  font-family: inherit;
+  font-weight: lighter;
+  font-size: 17pt;
+  margin-top: 20px;
+}
+
+.colored-areas{
+  background-color: #AC6EFF
+}
+
+.success, .error{
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.error {
+  background: linear-gradient(
+    60deg,
+    rgba(172, 110, 255, 1) 54%,
+    rgba(172, 110, 255, 1) 67%,
+    rgba(36, 20, 219, 1) 98%
+  );
+}
+
+.icon.icon-info:hover{
+  color: black;
+}
+
